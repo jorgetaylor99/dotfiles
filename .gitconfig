@@ -1,0 +1,5 @@
+[user]
+	name = Jorge
+	email = jorgetaylor99@users.noreply.github.com
+[core]
+	excludesfile = /Users/jorge/.gitignore_global

@@ -1,6 +1,6 @@
 ZSH_THEME=""
 
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting extract z colored-man-pages web-search)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting extract z)
 
 source ~/.oh-my-zsh/oh-my-zsh.sh
 

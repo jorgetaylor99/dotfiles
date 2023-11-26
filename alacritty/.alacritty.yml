@@ -6,7 +6,7 @@ window:
     y: 16
   dynamic_padding: true
   decorations: buttonless
-  startup_mode: Maximized
+  startup_mode: Windowed
   opacity: 1.0
   title: Alacritty
   dynamic_title: false

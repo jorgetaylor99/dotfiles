@@ -1,4 +1,5 @@
 # support for macos keyboard shortcuts
+
 key_bindings:
   - { key: Key0, mods: Alt, chars: 'º' }
   - { key: Key1, mods: Alt, chars: '¡' }
@@ -12,15 +13,27 @@ key_bindings:
   - { key: Key9, mods: Alt, chars: 'ª' }
 
 window:
+  # spread additional padding evenly around terminal content
+  dynamic_padding: true
+
+  decorations: buttonless
+
+  opacity: 1.0
+
+  startup_mode: Maximized
+
+  title: Alacritty
+  dynamic_title: false
+
   padding:
-    x: 32
-    y: 32
+    x: 16
+    y: 16
 
 scrolling:
-  history: 5000
+  history: 10000
 
 font:
-  size: 18
+  size: 14
   normal:
     family: JetBrains Mono
     style: Regular
@@ -33,34 +46,30 @@ font:
     family: JetBrains Mono
     style: Italic
 
-colors:
-  # Default colors
-  primary:
-    background: '#282c34'
-    foreground: '#abb2bf'
+schemes:
+  onedark: &onedark
+    primary:
+      background: '#282c34'
+      foreground: '#abb2bf'
+    normal:
+      black: '#282c34'
+      red: '#e06c75'
+      green: '#98c379'
+      yellow: '#d19a66'
+      blue: '#61afef'
+      magenta: '#c678dd'
+      cyan: '#56b6c2'
+      white: '#abb2bf'
+    bright:
+      black: '#5c6370'
+      red: '#e06c75'
+      green: '#98c379'
+      yellow: '#d19a66'
+      blue: '#61afef'
+      magenta: '#c678dd'
+      cyan: '#56b6c2'
+      white: '#ffffff'
 
-  # Normal colors
-  normal:
-    # NOTE: Use '#131613' for the `black` color if you'd like to see
-    # black text on the background.
-    black: '#282c34'
-    red: '#e06c75'
-    green: '#98c379'
-    yellow: '#d19a66'
-    blue: '#61afef'
-    magenta: '#c678dd'
-    cyan: '#56b6c2'
-    white: '#abb2bf'
+colors: *onedark
 
-  # Bright colors
-  bright:
-    black: '#5c6370'
-    red: '#e06c75'
-    green: '#98c379'
-    yellow: '#d19a66'
-    blue: '#61afef'
-    magenta: '#c678dd'
-    cyan: '#56b6c2'
-    white: '#ffffff'
-
-theme: One-Dark
+live_config_reload: true

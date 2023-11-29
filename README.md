@@ -1,4 +1,4 @@
-# Jorge's Minimalist Dotfiles for Alacritty, Neovim & Zsh on Mac OS
+# Jorge's Dotfiles
 
 ## Setup
 

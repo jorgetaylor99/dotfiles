@@ -1,8 +1,8 @@
-# Jorge's Dotfiles
+## Dotfiles for neovim, zsh and alacritty on macos
 
-## Setup
+### Setup
 
-To install dotfiles from a fresh machine:
+To install dotfiles from a fresh mac:
 
 1. Start by upgrading Mac OS to the latest version
 ```softwareupdate --all --install```
@@ -13,9 +13,9 @@ To install dotfiles from a fresh machine:
 3. Clone this repository
 ```git clone https://github.com/jorgetaylor99/dotfiles.git ~/.dotfiles```
 
-4. Run the setup script
-```cd .dotfiles```
-```chmod +x setup.sh```
-```./setup.sh```
+4. Navigate to directory and run the setup script
+```cd .dotfiles && source setup.sh```
 
 Setup should then be complete!
+
+Note: You may need to restart for all changes to take effect.

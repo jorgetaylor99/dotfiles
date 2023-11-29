@@ -13,6 +13,8 @@ cask "alacritty"
 cask "font-jetbrains-mono-nerd-font"
 cask "google-chrome"
 cask "rectangle"
-cask "spotify"
-cask "utm"
-cask "zoom"
+
+# Personal casks not suitable for installation on work computer
+# cask "spotify"
+# cask "utm"
+# cask "zoom"

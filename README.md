@@ -1,4 +1,6 @@
-## Dotfiles for neovim, zsh and alacritty on macos
+## Jorge's .files for neovim, zsh and alacritty on macos :)
+
+<img width="868" alt="Screenshot 2023-11-29 at 21 33 27" src="https://github.com/jorgetaylor99/dotfiles/assets/84081119/006b308a-98ea-4f10-8aa9-7fbc4da19f00">
 
 ### Setup
 

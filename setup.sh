@@ -2,13 +2,20 @@
 
 echo "Set up started."
 
-# Check for Oh My Zsh and install if we don't have it
+# Install Oh My Zsh and Plugins
 if test ! $(which omz); then
   echo "Installing Oh My Zsh..."
   (sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/HEAD/tools/install.sh)") && echo "Oh My Zsh installed successfully."
+  
+  echo "Installing zsh-autosuggestions..."
+  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+  echo "Installing zsh-syntax-highlighting..."
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 fi
 
-# Check for Homebrew and install if we don't have it
+
+# Install Homebrew
 if test ! $(which brew); then
   echo "Installing Homebrew..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -17,7 +24,7 @@ if test ! $(which brew); then
 fi
 
 # Update Homebrew
-echo "Updating Homebrew"
+echo "Updating Homebrew..."
 brew update
 
 # Install all our dependencies with bundle
@@ -26,7 +33,7 @@ brew tap homebrew/bundle
 brew bundle --file ./brew/Brewfile
 
 # Ensure formulae are up-to-date
-echo "Upgrading brew dependencies"
+echo "Upgrading brew dependencies..."
 brew upgrade
 
 # Create directory for neovim configuration if it doesn't exist

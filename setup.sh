@@ -53,6 +53,10 @@ ln -sf ~/.dotfiles/zsh/.zshrc ~/.zshrc
 ln -sf ~/.dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 ln -sf ~/.dotfiles/macos/.hushlogin ~/.hushlogin
 
+# Install vim-plug a plugin manager for neovim
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
 # Set macOS preferences
 echo "Setting macOS preferences..."
 source ~/.dotfiles/macos/.macos

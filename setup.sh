@@ -46,12 +46,17 @@ fi
 # Create directory for neovim configuration if it doesn't exist and create symlinks
 mkdir -p ~/.config/nvim
 echo "Creating symlinks..."
-ln -sf ~/.dotfiles/alacritty/.alacritty.yml ~/.alacritty.yml
+ln -sf ~/.dotfiles/alacritty/.alacritty.toml ~/.alacritty.toml
 ln -sf ~/.dotfiles/git/.gitconfig ~/.gitconfig
 ln -sf ~/.dotfiles/zsh/.zprofile ~/.zprofile
 ln -sf ~/.dotfiles/zsh/.zshrc ~/.zshrc
 ln -sf ~/.dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 ln -sf ~/.dotfiles/macos/.hushlogin ~/.hushlogin
+ln -sf ~/.dotfiles/tmux/.tmux.conf ~/.tmux.conf
+
+# Install vim-plug a plugin manager for neovim
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 # Install vim-plug a plugin manager for neovim
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \

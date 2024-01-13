@@ -14,6 +14,9 @@ PROMPT="%{$fg[blue]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[magenta]%}%~ %{$re
 # Enable vi mode in terminal
 bindkey -v
 
+# Put z compdump files in seperate directory as to avoid cluttering home
+compinit -d ~/.cache/zsh/zcompdump-$ZSH_VERSION
+
 # Aliases
 alias gs="git status"
 alias ga="git add"
@@ -27,3 +30,4 @@ alias gco="git checkout"
 alias h="history"
 alias j="jobs -l"
 alias nv="nvim"
+alias python=python3

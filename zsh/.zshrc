@@ -17,6 +17,11 @@ bindkey -v
 # Put z compdump files in seperate directory as to avoid cluttering home
 compinit -d ~/.cache/zsh/zcompdump-$ZSH_VERSION
 
+# pyenv for managing python versions
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv virtualenv-init -)"
+
 # Aliases
 alias gs="git status"
 alias ga="git add"
@@ -30,4 +35,4 @@ alias gco="git checkout"
 alias h="history"
 alias j="jobs -l"
 alias nv="nvim"
-alias python=python3
+alias python="python3"

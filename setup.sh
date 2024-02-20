@@ -62,4 +62,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 echo "Setting macOS preferences..."
 source ~/.dotfiles/macos/.macos
 
+# Set hostname of machine
+sudo scutil --set HostName macbook
+
 echo "Set up complete!"

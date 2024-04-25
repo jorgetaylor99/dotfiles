@@ -1,4 +1,4 @@
-## Jorge's .files for Neovim, Zsh and Alacritty on macOS :)
+## Jorge's dotfiles for macOS :)
 
 ### Setup
 

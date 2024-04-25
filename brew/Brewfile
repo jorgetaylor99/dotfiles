@@ -1,23 +1,15 @@
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
 tap "homebrew/services"
+
 brew "grep"
-brew "htop"
 brew "node"
 brew "neovim"
-brew "optipng"
 brew "tmux"
 brew "tree"
 brew "python"
 brew "pyenv"
 brew "pyenv-virtualenv"
 
-cask "alacritty"
-cask "font-jetbrains-mono-nerd-font"
 cask "google-chrome"
 cask "rectangle"
-
-# Personal casks not suitable for installation on work computer
-# cask "spotify"
-# cask "utm"
-# cask "zoom"
+cask "spotify"

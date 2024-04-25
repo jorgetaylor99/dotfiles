@@ -9,7 +9,7 @@ plugins=(git extract z zsh-autosuggestions zsh-syntax-highlighting)
 source ~/.oh-my-zsh/oh-my-zsh.sh
 
 # Custom prompt
-PROMPT="%{$fg[blue]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[magenta]%}%~ %{$reset_color%}%# "
+PROMPT="%{$fg[cyan]%}%n%{$reset_color%}@%{$fg[magenta]%}%m %{$fg[yellow]%}%~ %{$reset_color%}%# "
 
 # Enable vi mode in terminal
 bindkey -v
@@ -21,6 +21,12 @@ compinit -d ~/.cache/zsh/zcompdump-$ZSH_VERSION
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init --path)"
 eval "$(pyenv virtualenv-init -)"
+
+# Automatically load all ssh keys from keychain after reboot
+if [ -z "$SSH_AUTH_SOCK" ]; then
+  eval "$(ssh-agent -s)"
+fi
+ssh-add --apple-load-keychain &>/dev/null
 
 # Aliases
 alias gs="git status"

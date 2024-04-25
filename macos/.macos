@@ -1,8 +1,10 @@
 #!/bin/zsh
 
-# Always show scrollbars
+# Show scrollbar options: `WhenScrolling`, `Automatic` and `Always`
 defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
-# Possible values: `WhenScrolling`, `Automatic` and `Always`
 
-# # Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
+# Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
 defaults write com.apple.finder QuitMenuItem -bool true
+
+# disable the Apple press and hold for VSCode only
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false

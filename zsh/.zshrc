@@ -23,9 +23,6 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
 fi
 ssh-add --apple-load-keychain &>/dev/null
 
-# Load env variables to store gitconfig user credentials
-source ../.env
-
 # Aliases
 alias gs="git status"
 alias ga="git add"

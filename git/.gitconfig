@@ -1,3 +1,6 @@
+[user]
+	name = jorgetaylor
+	email = jorgetaylor99@users.noreply.github.com
 [core]
 	excludesfile = /Users/jorge/.gitignore_global
 	editor = nvim

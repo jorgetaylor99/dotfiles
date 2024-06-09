@@ -7,8 +7,6 @@ brew "neovim"
 brew "tmux"
 brew "tree"
 brew "python"
-brew "pyenv"
-brew "pyenv-virtualenv"
 
 cask "iterm2"
 cask "google-chrome"

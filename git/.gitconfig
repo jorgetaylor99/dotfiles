@@ -1,6 +1,6 @@
 [user]
-	name = Jorge
-	email = jorgetaylor99@users.noreply.github.com
+	name = $GIT_USER_NAME
+	email = $GIT_USER_EMAIL
 [core]
 	excludesfile = /Users/jorge/.gitignore_global
 	editor = nvim

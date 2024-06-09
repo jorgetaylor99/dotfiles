@@ -17,16 +17,14 @@ bindkey -v
 # Put z compdump files in seperate directory as to avoid cluttering home
 compinit -d ~/.cache/zsh/zcompdump-$ZSH_VERSION
 
-# pyenv for managing python versions
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init --path)"
-eval "$(pyenv virtualenv-init -)"
-
 # Automatically load all ssh keys from keychain after reboot
 if [ -z "$SSH_AUTH_SOCK" ]; then
   eval "$(ssh-agent -s)"
 fi
 ssh-add --apple-load-keychain &>/dev/null
+
+# Load env variables to store gitconfig user credentials
+source ../.env
 
 # Aliases
 alias gs="git status"
@@ -42,10 +40,3 @@ alias h="history"
 alias j="jobs -l"
 alias nv="nvim"
 alias python="python3"
-
-# TEMP FOR RENY CODE
-export PATH="/opt/homebrew/opt/tcl-tk/bin:$PATH"
-export LDFLAGS="-L/opt/homebrew/opt/tcl-tk/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/tcl-tk/include"
-export PKG_CONFIG_PATH="/opt/homebrew/opt/tcl-tk/lib/pkgconfig"
-

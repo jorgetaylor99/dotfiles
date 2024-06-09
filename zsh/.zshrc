@@ -42,3 +42,10 @@ alias h="history"
 alias j="jobs -l"
 alias nv="nvim"
 alias python="python3"
+
+# TEMP FOR RENY CODE
+export PATH="/opt/homebrew/opt/tcl-tk/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/tcl-tk/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/tcl-tk/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/tcl-tk/lib/pkgconfig"
+

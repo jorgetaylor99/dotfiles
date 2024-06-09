@@ -1,6 +1,5 @@
 " Basic settings
 set number          " Show line numbers
-set relativenumber  " Show relative line numbers
 set ignorecase      " Ignore case in search patterns
 set smartcase       " Override ignorecase if search pattern contains uppercase letters
 

@@ -1,6 +1,6 @@
-## Jorge's dotfiles for macOS :)
+# Jorge's dotfiles for macOS :)
 
-### Setup
+## Setup
 
 To install dotfiles from a fresh mac:
 
